@@ -9,7 +9,19 @@ import { DbzService } from "../services/dbz.service";
 
 export class MainPageComponent implements OnInit {
 
-  constructor(public dbzService: DbzService) {
+  constructor(private dbzService: DbzService) {
+  }
+
+  get characters(): Character[] {
+    return [...this.dbzService.characters];
+  }
+
+  onDeleteCharacter(id: string) {
+    this.dbzService.deleteCharacterById(id);
+  }
+
+  onNewCharacter(character: Character): void {
+    this.dbzService.addCharacter(character);
   }
 
   ngOnInit() {
