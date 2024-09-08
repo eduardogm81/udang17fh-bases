@@ -15,3 +15,6 @@ Usar ng para crear componentes:
 - ng g component --help
 - ng g c heroes/hero
 - ng g c heroes/list
+
+Usar ng para generar modulos:
+- ng g m dbz
