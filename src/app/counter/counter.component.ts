@@ -1,7 +1,7 @@
 import {Component} from "@angular/core";
 
 @Component({
-  standalone: true,
+  //standalone: true,
   selector: 'app-counter',
   template: `
     <h3>Counter: {{counter}}</h3>
